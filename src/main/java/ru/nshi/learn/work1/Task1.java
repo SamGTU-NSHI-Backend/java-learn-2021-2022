@@ -37,7 +37,7 @@ public class Task1 {
         number -= e2s * e2;
         int e1s = number;
 
-        System.out.println(e6s + "+" + e5s + "+" + e4s + "=" + e3s + "+" +  e2s + "+" + e1s);
+        //System.out.println(e6s + "+" + e5s + "+" + e4s + "=" + e3s + "+" +  e2s + "+" + e1s);
         return ((e6s + e5s + e4s) == (e3s + e2s + e1s));
     }
 }
