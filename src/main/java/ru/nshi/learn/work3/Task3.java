@@ -6,7 +6,9 @@ public class Task3 {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        int erat[] = eratosphen(1000);
+        System.out.print("The value is ");
+        if (!eratosphen_check_simple(number)) System.out.print("not ");
+        System.out.println("simple");
         scanner.close();
     }
     // Decide whether or not the value is simple
