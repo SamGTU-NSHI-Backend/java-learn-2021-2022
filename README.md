@@ -20,3 +20,4 @@
 ## Список задач
 1. [Установочная задача](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work0)
 2. [Работа с ветвлениями и циклами](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work1)
+3. [Работа с одномерными массивами](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work2)
