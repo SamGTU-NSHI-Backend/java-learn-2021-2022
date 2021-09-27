@@ -6,7 +6,7 @@ public class Task1 {
     public static void main(String main[]) {
         ArrayLection lection = new ArrayLection();
         int array[] = new int[5];
-        lection.randomizeArray(array, -50, 51);
+        lection.randomizeArray(array, 10, 100);
         lection.printArray(array);
     }
 }
