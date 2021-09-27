@@ -20,7 +20,7 @@ public class ArrayLection {
     public void randomizeArray(int array[], int min_value, int max_value) {
         Random rnd = new Random(69);
         for (int i = 0; i < array.length; i++) {
-            array[i] = rnd.nextInt(max_value) + min_value;
+            array[i] = rnd.nextInt(max_value - min_value) + min_value;
         }
     }
 
