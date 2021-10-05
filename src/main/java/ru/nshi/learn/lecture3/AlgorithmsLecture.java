@@ -4,11 +4,17 @@ import ru.nshi.learn.lecture2.ArraysLecture;
 
 /**
  * @author rassafel
+ * UpperCamelCase - only for class
+ * lowerCamelCase - only variables & methods
+ *
  */
 public class AlgorithmsLecture {
+
+    static final int SERVER_PORT = 8080;
+
     public static void main(String[] args) {
         ArraysLecture arraysLecture = new ArraysLecture();
-        int[] array = arraysLecture.createArray(5);
+        int[] array = arraysLecture.createArray(6);
         arraysLecture.fillArrayByRandom(array);
         arraysLecture.printArray(array);
 
@@ -28,6 +34,18 @@ public class AlgorithmsLecture {
             arraysLecture.printArray(array);
             System.out.println("Now array is sorted.");
         }
+
+        double average = algorithmsLecture.average(array);
+        System.out.println("average = " + average);
+        System.out.printf("average rounded = %5.1f\n", average);
+
+        System.out.println("Math.floor(1.99999) = " + Math.floor(1.99999));
+        System.out.println("Math.ceil(1.0000001) = " + Math.ceil(1.0000001));
+        System.out.println("Math.round(1.4) = " + Math.round(1.4));
+        System.out.println("Math.round(1.6) = " + Math.round(1.6));
+
+        System.out.println("Math.round(1.019 * 100) / 100d = " + Math.round(1.019 * 100) / 100d);
+
     }
 
     /**
@@ -98,5 +116,17 @@ public class AlgorithmsLecture {
                 }
             }
         }
+    }
+
+    public int sum(int[] array){
+        int sum = 0;
+        for (int value : array) {
+            sum += value;
+        }
+        return sum;
+    }
+
+    public double average(int[] array) {
+        return (double) sum(array) / array.length;
     }
 }
