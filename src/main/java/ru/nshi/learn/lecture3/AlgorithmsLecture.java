@@ -20,6 +20,12 @@ public class AlgorithmsLecture {
 
         int lastIndex = algorithmsLecture.lastIndexOf(array, 3);
         System.out.println("lastIndex = " + lastIndex);
+
+        if(algorithmsLecture.isSorted(array)) {
+            System.out.println("Array is sorted.");
+        } else {
+            System.out.println("Array is not sorted.");
+        }
     }
 
     /**
@@ -46,5 +52,15 @@ public class AlgorithmsLecture {
             }
         }
         return -1;
+    }
+
+    public boolean isSorted(int[] array) {
+        boolean isSorted = true;
+        for (int index = 0; index < array.length - 1; index++) {
+            if (array[index] > array[index + 1]) {
+                isSorted = false;
+            }
+        }
+        return isSorted;
     }
 }
