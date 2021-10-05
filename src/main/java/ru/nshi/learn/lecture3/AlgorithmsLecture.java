@@ -26,7 +26,7 @@ public class AlgorithmsLecture {
         System.out.println("lastIndex = " + lastIndex);
 
         arraysLecture.printArray(array);
-        if(algorithmsLecture.isSorted(array)) {
+        if (algorithmsLecture.isSorted(array)) {
             System.out.println("Array is sorted.");
         } else {
             System.out.println("Array is not sorted.");
@@ -105,10 +105,10 @@ public class AlgorithmsLecture {
      */
     public void bubbleSort(int[] array) {
         boolean isSorted = false;
-        while(!isSorted) {
+        while (!isSorted) {
             isSorted = true;
             for (int index = 0; index < array.length - 1; index++) {
-                if(array[index] > array[index+1]) {
+                if (array[index] > array[index + 1]) {
                     isSorted = false;
                     int buff = array[index];
                     array[index] = array[index + 1];
@@ -118,7 +118,7 @@ public class AlgorithmsLecture {
         }
     }
 
-    public int sum(int[] array){
+    public int sum(int[] array) {
         int sum = 0;
         for (int value : array) {
             sum += value;
@@ -128,5 +128,13 @@ public class AlgorithmsLecture {
 
     public double average(int[] array) {
         return (double) sum(array) / array.length;
+    }
+
+    public int[] copyArray(int[] array) {
+        int[] copy = new int[array.length];
+        for (int index = 0; index < array.length; index++) {
+            copy[index] = array[index];
+        }
+        return copy;
     }
 }
