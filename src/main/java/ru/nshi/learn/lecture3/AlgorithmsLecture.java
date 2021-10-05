@@ -49,6 +49,14 @@ public class AlgorithmsLecture {
         return -1;
     }
 
+    /**
+     * Find last match by value.
+     *
+     * @param array
+     * @param value
+     * @return index in array
+     * if value not exist returns -1
+     */
     public int lastIndexOf(int[] array, int value) {
         for (int index = array.length - 1; index > -1; index--) {
             if (array[index] == value) {
@@ -58,6 +66,12 @@ public class AlgorithmsLecture {
         return -1;
     }
 
+    /**
+     * Check for sorting in array.
+     *
+     * @param array
+     * @return
+     */
     public boolean isSorted(int[] array) {
         boolean isSorted = true;
         for (int index = 0; index < array.length - 1; index++) {
@@ -68,6 +82,11 @@ public class AlgorithmsLecture {
         return isSorted;
     }
 
+    /**
+     * Sort array using bubble sort.
+     *
+     * @param array
+     */
     public void bubbleSort(int[] array) {
         boolean isSorted = false;
         while(!isSorted) {
