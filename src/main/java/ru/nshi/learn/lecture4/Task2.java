@@ -22,7 +22,7 @@ public class Task2 {
         arraysLecture.printArray(array);
         System.out.println();
 
-        if(task2.containsDistinctValues(array)) {
+        if (task2.containsDistinctValues(array)) {
             System.out.println("Массив состоит из уникальных значений.");
         } else {
             System.out.println("Массив содержит дубликаты.");
@@ -31,13 +31,13 @@ public class Task2 {
 
     public void fillArrayWithDistinctValues(int[] array, int start, int end) {
         // O(n^2)
-        if(array.length > end - start) {
+        if (array.length > end - start) {
             System.err.println("Невозможно заполнить массив уникальными значениями.");
             return;
         }
         for (int i = 0; i < array.length; i++) {
             int value = task1.randomInt(start, end);
-            while(indexOf(array, value) != -1) {
+            while (indexOf(array, value) != -1) {
                 value = task1.randomInt(start, end);
             }
             array[i] = value;
@@ -47,7 +47,7 @@ public class Task2 {
     public int indexOf(int[] array, int value) {
         // O(n)
         for (int i = 0; i < array.length; i++) {
-            if(array[i] == value) {
+            if (array[i] == value) {
                 return i;
             }
         }
@@ -58,7 +58,7 @@ public class Task2 {
         // O(n^2)
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = i + 1; j < array.length; j++) {
-                if(array[i] == array[j]) {
+                if (array[i] == array[j]) {
                     return false;
                 }
             }
