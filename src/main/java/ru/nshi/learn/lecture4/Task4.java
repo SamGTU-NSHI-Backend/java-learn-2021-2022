@@ -20,17 +20,23 @@ public class Task4 {
         task4.printPoints(points);
         System.out.println();
 
+        long start = System.nanoTime();
         double square = task4.square(points);
+        long end = System.nanoTime();
+
         System.out.println("Площадь квадрата равна: " + square);
+        System.out.println("end-start = " + (end - start));
     }
 
     public void printPoints(Point[] points) {
+        // O(N)
         for (Point point : points) {
-            System.out.printf("Point: x=%d, y=%d\n", point.x, point.y);
+            System.out.println(point.toString());
         }
     }
 
     public double square(Point[] points) {
+        // O(N)
         double[] lengths = calculateLengths(points);
         if(!isEquals(lengths)) {
             System.err.println("Данный объект не является квадратом");
@@ -41,6 +47,7 @@ public class Task4 {
     }
 
     public boolean isEquals(double[] lengths) {
+        // O(N)
         double firstLength = lengths[0];
         for (double length : lengths) {
             if(length != firstLength) {
@@ -51,6 +58,7 @@ public class Task4 {
     }
 
     public double[] calculateLengths(Point[] points) {
+        // O(N)
         double[] lengths = new double[points.length];
         for (int i = 0; i < points.length; i++) {
             Point pointA = points[i];
@@ -61,6 +69,7 @@ public class Task4 {
     }
 
     public double calculateLength(Point pointA, Point pointB) {
+        // O(1)
         int diffX = pointA.x - pointB.x;
         int diffY = pointA.y - pointB.y;
         double powDiffX = Math.pow(diffX, 2);
