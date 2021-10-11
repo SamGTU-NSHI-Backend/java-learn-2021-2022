@@ -52,7 +52,7 @@ public class ArraysLecture {
                 System.out.print(", ");
             }
         }
-        System.out.println("]");
+        System.out.print("]");
     }
 
     public void printArray(int[][] array) {
