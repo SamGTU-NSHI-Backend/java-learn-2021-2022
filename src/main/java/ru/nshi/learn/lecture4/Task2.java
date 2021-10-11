@@ -1,5 +1,7 @@
 package ru.nshi.learn.lecture4;
 
+import ru.nshi.learn.lecture2.ArraysLecture;
+
 /**
  * @author rassafel
  */
@@ -7,16 +9,17 @@ public class Task2 {
     public static final Task1 task1 = new Task1();
 
     public static void main(String[] args) {
+        ArraysLecture arraysLecture = new ArraysLecture();
         Task2 task2 = new Task2();
 
-        int[] array = new int[100];
+        int[] array = new int[10];
         System.out.print("Исходный массив: ");
-        task1.printArray(array);
+        arraysLecture.printArray(array);
         System.out.println();
 
         System.out.print("Результирующий массив: ");
         task2.fillArrayWithDistinctValues(array, 0, 101);
-        task1.printArray(array);
+        arraysLecture.printArray(array);
         System.out.println();
 
         if(task2.containsDistinctValues(array)) {

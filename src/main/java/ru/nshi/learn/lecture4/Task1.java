@@ -1,5 +1,7 @@
 package ru.nshi.learn.lecture4;
 
+import ru.nshi.learn.lecture2.ArraysLecture;
+
 import java.util.Random;
 
 /**
@@ -7,25 +9,17 @@ import java.util.Random;
  */
 public class Task1 {
     public static void main(String[] args) {
+        ArraysLecture arraysLecture = new ArraysLecture();
         Task1 task = new Task1();
         int[] array = new int[1];
         System.out.print("Исходный массив: ");
-        task.printArray(array);
+        arraysLecture.printArray(array);
         System.out.println();
 
         System.out.print("Результирующий массив: ");
         task.fillArray(array, 130, 10, 100);
-        task.printArray(array);
+        arraysLecture.printArray(array);
         System.out.println();
-    }
-
-    public void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
-            if (i + 1 < array.length) {
-                System.out.print(", ");
-            }
-        }
     }
 
     public void fillArray(int[] array, int s, int start, int end) {
