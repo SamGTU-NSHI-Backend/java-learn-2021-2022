@@ -124,5 +124,15 @@ public class LectureStrings {
         for (String string : strings) {
             System.out.println(string);
         }
+
+        System.out.println("Split string with limit");
+
+        // Разделение строки на массив строк, используя разделитель
+        // с ограничением на длину массива
+        strings = str.split("\\s+", 3);
+        System.out.println("strings.length = " + strings.length);
+        for (String string : strings) {
+            System.out.println(string);
+        }
     }
 }
