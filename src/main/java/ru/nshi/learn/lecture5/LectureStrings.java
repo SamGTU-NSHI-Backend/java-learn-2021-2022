@@ -15,11 +15,15 @@ public class LectureStrings {
         // Символ нижнего регистра?
         System.out.println("Character.isLowerCase(ch) = " + Character.isLowerCase(ch));
 
+        // Символ цифра?
+        System.out.println("Character.isDigit(ch) = " + Character.isDigit(ch));
+
         // Перевести символ в верхний регистр
         System.out.println("Character.toUpperCase(ch) = " + Character.toUpperCase(ch));
 
         // Перевести символ в нижний регистр
         System.out.println("Character.toLowerCase(ch) = " + Character.toLowerCase(ch));
+
 
         System.out.println("ch = " + ch);
 
