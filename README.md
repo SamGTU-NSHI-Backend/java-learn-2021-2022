@@ -19,9 +19,17 @@
 - если решение верное подтверждаем реквест;
 - если есть правки, ошибки описываем вам их в комментариях реквеста.
 
+## Список лекций
+1. [Циклы и ветвления](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture1)
+2. [Массивы](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture2)
+3. [Алгоритмы поиска и сортировки](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture3)
+4. [Решение тестовых задач](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture4)
+5. [Строки](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture5)
+6. [Регулярные выражения](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture6)
+
 ## Список работ
 1. [Установочная работа (с примером решения)](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work0)
 2. [Работа с ветвлениями и циклами](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work1)
 3. [Работа с одномерными массивами](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work2)
 4. [Работа с двумерными массивами](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work3)
-4. [Работа со строками](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work4)
+5. [Работа со строками](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work4)
