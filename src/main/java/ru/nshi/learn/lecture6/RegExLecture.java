@@ -1,4 +1,4 @@
-package ru.nshi.learn.lesson6.ch1;
+package ru.nshi.learn.lecture6;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,7 +6,7 @@ import static java.util.regex.Pattern.compile;
 
 
 
-public class Main {
+public class RegExLecture {
 
     public static final String MAIN_TEXT = "С другой стороны постоянный количественный рост и сфера нашей активности обеспечивает" +
         " широкому ростов кругу специалистов участие в формировании модели развития! Разнообразный и богатый опыт консультация" +
@@ -15,7 +15,7 @@ public class Main {
         " повышению актуальности роста финансовых и административных условий!";
     //Regular expressions
     public static void main(String[] args) {
-        Main m = new Main();
+        RegExLecture m = new RegExLecture();
 //        m.parseIntFromString();
 //        m.testSimpleRegexp();
 //        m.test1();
