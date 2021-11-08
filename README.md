@@ -12,7 +12,7 @@
 - Григорьев Роман Алексевич (VK- @d9279053554) - Roman141099
 3. Создаете ветку с номером работы;
 4. Создаете отдельный пакет в вашем репозитории;
-5. Для каждой задачи содаете свой класс и решаете задачу;
+5. Для каждой задачи создаётеу свой класс и решаете задачу;
 6. Создаете Pull Request с ветки с решением работы на главную ветку;
 7. Сообщаете нам личным сообщением, с ссылкой на ваш репозиторий;
 8. Мы проверяем решение:
@@ -26,6 +26,7 @@
 4. [Решение тестовых задач](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture4)
 5. [Строки](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture5)
 6. [Регулярные выражения](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture6)
+7. [Объектно-ориентированное программирование (часть 1)](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/lecture7)
 
 ## Список работ
 1. [Установочная работа (с примером решения)](https://github.com/rassafel/java-learn/tree/master/src/main/java/ru/nshi/learn/work0)
