@@ -10,9 +10,12 @@ public class Task3 {
     static Random random = new Random();
 
     public static void main(String[] args) {
-
+        Task3 task = new Task3();
         int[] array = new int[5];
+        task.MaxMinElementsMassiv(array);
+    }
 
+    public void MaxMinElementsMassiv(int[] array) {
         for (int index = 0; index < array.length; index++) {
             array[index] = random.nextInt(2001) - 1000;
         }

@@ -11,8 +11,12 @@ public class Task2 {
     static Random random = new Random();
 
     public static void main(String[] args) {
-
+        Task2 task = new Task2();
         int[] array = new int[5];
+        task.SummElementMassiv(array);
+    }
+
+    public void SummElementMassiv(int[] array) {
         int Summ = 0;
         for (int index = 0; index < array.length; index++) {
             array[index] = random.nextInt(101) - 50;

@@ -8,6 +8,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
+
 // Создаем двумерный массив
         int[][] array = new int[10][10];
 

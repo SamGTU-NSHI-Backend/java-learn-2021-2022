@@ -10,9 +10,12 @@ public class Task5 {
     static Random random = new Random();
 
     public static void main(String[] args) {
-
+        Task5 task = new Task5();
         int[] array = new int[5];
+        task.AverageValueBetweenMinMax(array);
+    }
 
+    public void AverageValueBetweenMinMax(int[] array) {
         for (int index = 0; index < array.length; index++) {
             array[index] = random.nextInt(2001) - 1000;
         }

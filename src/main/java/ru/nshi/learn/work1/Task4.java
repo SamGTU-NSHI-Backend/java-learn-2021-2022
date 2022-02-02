@@ -6,8 +6,12 @@ package ru.nshi.learn.work1;
 
 public class Task4 {
     public static void main(String[] args) {
+        Task4 task = new Task4();
         boolean[] array = new boolean[2001];
+        task.SummSimpleNumber(array);
+    }
 
+    public void SummSimpleNumber(boolean[] array) {
         for (int index = 2; index < array.length; index++) {
             array[index] = true;
         }

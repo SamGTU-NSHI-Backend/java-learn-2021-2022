@@ -7,11 +7,15 @@ package ru.nshi.learn.work3;
 import java.util.Random;
 
 public class Task4 {
-
+    Random randomized = new Random();
     public static void main(String[] args) {
-
-        Random randomized = new Random();
+        Task4 task = new Task4();
         int[][] array = new int[10][10];
+        task.sortingMatrix(array);
+    }
+
+    public void sortingMatrix(int[][] array){
+
         int rows, columns;
         for (rows = 0; rows < 10; rows++) {
             for (columns = 0; columns < 10; columns++) {
