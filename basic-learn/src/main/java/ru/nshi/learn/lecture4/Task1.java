@@ -2,8 +2,6 @@ package ru.nshi.learn.lecture4;
 
 import ru.nshi.learn.lecture2.ArraysLecture;
 
-import java.util.Random;
-
 /**
  * @author rassafel
  */
