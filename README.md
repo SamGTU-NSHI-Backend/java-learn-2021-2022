@@ -1,3 +1,4 @@
+
 # Начальный репозиторий для изучения языка программирования Java
 
 ## Как выкладывать решения задач
@@ -26,6 +27,8 @@
 7. Maven:
   - [Maven](lessons/maven.md)
   - [JUnit](basic-learn/src/test/java/ru/nshi/learn/work0)
+8. Объектно-ориентированное программирование:
+  - [Лекция 1](basic-learn/src/main/java/ru/nshi/learn/lecture7)
 
 ## Работы
 
