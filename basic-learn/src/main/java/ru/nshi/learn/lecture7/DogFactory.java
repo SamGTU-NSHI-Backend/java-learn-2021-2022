@@ -5,7 +5,7 @@ package ru.nshi.learn.lecture7;
  */
 public class DogFactory extends AnimalFactory {
     @Override
-    protected Dog getAnimal() {
+    public Dog getAnimal() {
         return new Dog();
     }
 }
