@@ -41,4 +41,39 @@ public class Person {
     public double getWeight() {
         return weight;
     }
+
+    @Override
+    public String toString() {
+        String result = "Person{";
+
+        result += "weight="+ weight;
+
+        return result + "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (age != person.age) return false;
+        return Double.compare(person.weight, weight) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = age;
+        temp = Double.doubleToLongBits(weight);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Delete person object.");
+    }
 }
