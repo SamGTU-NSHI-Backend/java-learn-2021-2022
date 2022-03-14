@@ -42,4 +42,5 @@
 2. [Работа с одномерными массивами](tasks/2_WorkArrays.md)
 3. [Работа с двумерными массивами](tasks/3_WorkTwoDimArrays.md)
 4. [Работа со строками](tasks/4_WorkStrings.md)
-4. [Работа со сборщиком и тестирование](tasks/5_WorkMavenAndTests.md)
+5. [Работа со сборщиком и тестирование](tasks/5_WorkMavenAndTests.md)
+6. [Работа с классами](tasks/6_WorkOOP.md)
