@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * @author rassafel
@@ -31,7 +30,6 @@ public class QueueTest {
         // LIFO
         // Last In First Out
         Deque<String> deque = new LinkedList<>();
-        deque.addLast();
         deque.getLast();
     }
 }
