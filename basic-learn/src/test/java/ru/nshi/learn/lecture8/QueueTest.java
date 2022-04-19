@@ -30,6 +30,6 @@ public class QueueTest {
         // LIFO
         // Last In First Out
         Deque<String> deque = new LinkedList<>();
-        deque.getLast();
+//        deque.getLast();
     }
 }
