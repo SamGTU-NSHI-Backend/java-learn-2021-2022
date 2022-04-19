@@ -66,7 +66,7 @@ public class RemoteReader {
 
         String line;
         while ((line = reader.readLine()) != null) {
-            String[] values = line.split(",");
+            String[] values = line.split(DELIMITER);
             Integer indexRow = HEADERS.get("Own_goal");
             String ownGoal = values[indexRow];
             if (!"Y".equals(ownGoal)) {
