@@ -1,18 +1,20 @@
-
 # Начальный репозиторий для изучения языка программирования Java
 
 ## Как выкладывать решения задач
 
 1. Создать свой репозиторий с приватным уровнем доступа, либо копируете с данного репозитория;
 2. Пригласить с доступом к репозиторию:
+
 - Короблёв Сергей Андреевич (VK - @rassafel) - rassafel
 - Григорьев Роман Алексевич (VK- @d9279053554) - Roman141099
+
 3. Создать ветку c названием работы (пример: 10_WorkBeans);
 4. Создать отдельный пакет в вашем репозитории;
 5. Создать Pull Request с ветки с решением работы на главную ветку;
 6. Сообщить личным сообщением, с ссылкой на репозиторий;
 
 Проверка решения:
+
 - если решение верное подтверждаем реквест;
 - если есть правки, ошибки описываем вам их в комментариях к реквесту.
 
@@ -25,9 +27,13 @@
 5. [Строки](basic-learn/src/main/java/ru/nshi/learn/lecture5)
 6. [Регулярные выражения](basic-learn/src/main/java/ru/nshi/learn/lecture6)
 7. Maven:
-  - [Maven](lessons/maven.md)
-  - [JUnit](basic-learn/src/test/java/ru/nshi/learn/work0)
+
+- [Maven](lessons/maven.md)
+- [JUnit](basic-learn/src/test/java/ru/nshi/learn/work0)
+
 8. [Объектно-ориентированное программирование](basic-learn/src/main/java/ru/nshi/learn/lecture7)
+9. [Java Collections Framework](basic-learn/src/test/java/ru/nshi/learn/lecture8)
+9. [Работа с файлами](basic-learn/src/main/java/ru/nshi/learn/lecture9)
 
 ## Работы
 
