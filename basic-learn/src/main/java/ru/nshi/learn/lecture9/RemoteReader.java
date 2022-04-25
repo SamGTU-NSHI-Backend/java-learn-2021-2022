@@ -5,10 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 /**
  * @author rassafel
@@ -19,10 +18,13 @@ public class RemoteReader {
     static String DELIMITER = ",";
 
     public static void main(String[] args) throws IOException {
-        HEADERS = readHeaders(getReader());
+        BufferedReader reader = getReader();
+        HEADERS = readHeaders(reader);
+        List<RowGoal> rowGoals = parseGoals(reader, PARSE_GOAL);
         System.out.println(HEADERS);
-        System.out.println("Best Player = " + getBestPlayer(getReader()));
-        System.out.println("Team = " + getTeam(getReader()));
+        System.out.println(rowGoals);
+        System.out.println("Best Player = " + getBestPlayer(rowGoals));
+//        System.out.println("Team = " + getTeam(getReader()));
     }
 
     static Map<String, Integer> readHeaders(BufferedReader reader) throws IOException {
@@ -42,20 +44,41 @@ public class RemoteReader {
         return new BufferedReader(new InputStreamReader(connection.getInputStream()));
     }
 
-    static Map.Entry<String, Integer> getBestPlayer(BufferedReader reader) throws IOException {
-        reader.readLine();
-        Map<String, Integer> playerGoals = new HashMap<>();
+    private final static Predicate<String> BOOLEAN_PREDICATE = "y"::equalsIgnoreCase;
 
+    private final static Function<String[], RowGoal> PARSE_GOAL = (String[] values) -> {
+        RowGoal rowGoal = new RowGoal();
+        rowGoal.setDate(values[0]);
+        rowGoal.setStage(values[1]);
+        rowGoal.setHome(values[2]);
+        rowGoal.setAway(values[3]);
+        rowGoal.setTeamScored(values[4]);
+        rowGoal.setPlayerScored(values[5]);
+        rowGoal.setTime(values[6]);
+        rowGoal.setOwnGoal(BOOLEAN_PREDICATE.test(values[7]));
+        rowGoal.setPenalty(BOOLEAN_PREDICATE.test(values[8]));
+        return rowGoal;
+    };
+
+    static List<RowGoal> parseGoals(BufferedReader reader,
+                                    Function<String[], RowGoal> function) throws IOException {
+        List<RowGoal> rowGoals = new LinkedList<>();
         String line;
         while ((line = reader.readLine()) != null) {
-            String[] values = line.split(",");
-            Integer indexRow = HEADERS.get("Player_scored");
-            String player = values[indexRow];
-            Integer goals = playerGoals.getOrDefault(player, 0);
-            playerGoals.put(player, goals + 1);
+            String[] values = line.split(DELIMITER);
+            rowGoals.add(function.apply(values));
         }
+        return Collections.unmodifiableList(rowGoals);
+    }
 
-        System.out.println(playerGoals);
+
+    static Map.Entry<String, Integer> getBestPlayer(List<RowGoal> rowGoals) {
+        Map<String, Integer> playerGoals = new HashMap<>();
+        for (RowGoal rowGoal : rowGoals) {
+            String player = rowGoal.getPlayerScored();
+            Integer goals = playerGoals.getOrDefault(player, 1);
+            playerGoals.put(player, goals+1);
+        }
         return Collections.max(playerGoals.entrySet(),
             Comparator.comparingInt(Map.Entry::getValue));
     }
