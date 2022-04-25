@@ -33,7 +33,8 @@
 
 8. [Объектно-ориентированное программирование](basic-learn/src/main/java/ru/nshi/learn/lecture7)
 9. [Java Collections Framework](basic-learn/src/test/java/ru/nshi/learn/lecture8)
-9. [Работа с файлами](basic-learn/src/main/java/ru/nshi/learn/lecture9)
+10. [Работа с файлами](basic-learn/src/main/java/ru/nshi/learn/lecture9)
+11. [Stream API](basic-learn/src/main/java/ru/nshi/learn/lecture10)
 
 ## Работы
 
@@ -50,3 +51,4 @@
 4. [Работа со строками](tasks/4_WorkStrings.md)
 5. [Работа со сборщиком и тестирование](tasks/5_WorkMavenAndTests.md)
 6. [Работа с классами](tasks/6_WorkOOP.md)
+7. [Работа с файлами и Stream API](tasks/7_WorkStreams.md)
