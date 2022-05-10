@@ -20,7 +20,7 @@ public class Task1 {
         }
     }
 
-    private static String[] newStrings(String input) {
+    public static String[] newStrings(String input) {
         String[] result = new String[input.length()];
 
         for (int counter = 0; counter < input.length(); counter++) {

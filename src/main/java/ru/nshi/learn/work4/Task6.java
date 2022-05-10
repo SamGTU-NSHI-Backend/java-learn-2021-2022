@@ -15,7 +15,7 @@ public class Task6 {
         System.out.println(Massi(str));
     }
 
-    private static String Massi(String s) {
+    public static String Massi(String s) {
         System.out.print("\n");
 
         int count = 0;

@@ -12,7 +12,7 @@ public class Task3 {
         System.out.println(Massi(str));
     }
 
-    private static char[] Massi(String s) {
+    public static char[] Massi(String s) {
         char[] arrive;
         arrive = s.toCharArray();
 
@@ -20,7 +20,6 @@ public class Task3 {
         for (int N = 0; N < arrive.length; N++) {
             if (Character.isDigit(arrive[N]) == true) {
                 int y = Character.getNumericValue(arrive[N]);
-                //arrive2[M] = arrive[N];
                 M++;
             }
         }

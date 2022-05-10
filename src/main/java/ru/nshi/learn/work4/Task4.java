@@ -12,7 +12,7 @@ public class Task4 {
         System.out.print(summ(str));
     }
 
-    private static int summ(String s) {
+    public static int summ(String s) {
         int summ = 0;
         for (char aChar : s.toCharArray()) {
             if (Character.isDigit(aChar) == true) {

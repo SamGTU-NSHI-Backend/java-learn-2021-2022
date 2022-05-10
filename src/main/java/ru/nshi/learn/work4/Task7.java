@@ -15,12 +15,12 @@ public class Task7 {
         System.out.println(Massi(strin));
     }
 
-    private static String Massi(String s) {
+    public static String Massi(String s) {
         int count = 0;
         int count1 = 0;
 
         String[] strings = str.split("\\s+");
-        System.out.println("strings.length = " + strings.length);
+
         for (int i = 0; i < strings.length; i++) {
             int res = 0;
             String result = new StringBuilder(strings[i]).reverse().toString();

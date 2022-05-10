@@ -10,12 +10,12 @@ public class Task1 {
 
         int[][] array = new int[10][10];
 
-        Utils.generateRandomNumbersForArray2D(array);
+        Utils.generatePredeterminedNumbersForArray2D(array);
 
         Utils.printArray(array);
 
-        int[] arraySums = Utils.sumRows(array);
+       int[] arraySums = Utils.sumRows(array);
 
-        Utils.printSums(arraySums);
+       Utils.printSums(arraySums);
     }
 }

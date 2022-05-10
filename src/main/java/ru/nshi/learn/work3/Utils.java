@@ -26,15 +26,30 @@ public class Utils {
 
     public static void generateRandomNumbersForArray2D(int[][] array) {
 // Заполняем двумерный массив случайными числами
+
+
         for (int row = 0; row < array.length; row++) {
             for (int column = 0; column < array[row].length; column++) {
                 array[row][column] = Utils.random.nextInt(100);
+
+            }
+        }
+    }
+
+    public static void generatePredeterminedNumbersForArray2D(int[][] array) {
+
+
+        for (int row = 0; row < array.length; row++) {
+            for (int column = 0; column < array[row].length; column++) {
+
+                array[row][column] = 1;
             }
         }
     }
 
     public static int[] sumRows(int[][] array) {
 // Сумма чисел на строках
+
         int[] arraySums = new int[array.length];
         int index = 0;
 

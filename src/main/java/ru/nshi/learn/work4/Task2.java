@@ -14,7 +14,7 @@ public class Task2 {
         System.out.println(result);
     }
 
-    private static String newString(String string) {
+   public static String newString(String string) {
         String result = "";
 
         for (char character : string.toCharArray()) {

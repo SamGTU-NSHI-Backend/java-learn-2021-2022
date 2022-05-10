@@ -6,18 +6,18 @@
 package ru.nshi.learn.work4;
 
 public class Task5 {
-    static String str = "ABCNkk15j35g";
+    static String str = "qwertyqwerty";
 
     public static void main(String args[]) {
         System.out.println(Massi(str));
     }
 
-    private static String Massi(String s) {
+    public static String Massi(String s) {
 
-        String result = new StringBuilder(str).reverse().toString();
-        result = result.replaceAll("(.)(?=.*\\1)", "");
-        result = new StringBuilder(result).reverse().toString();
+        str = new StringBuilder(str).reverse().toString();
+        str = str.replaceAll("(.)(?=.*\\1)", "");
+        str = new StringBuilder(str).reverse().toString();
 
-        return result;
+        return str;
     }
 }
